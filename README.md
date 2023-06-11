@@ -57,7 +57,8 @@ java CollectionBenchmarkTool
 
 ## Лицензия
 
-[MIT License](LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 
 ## Автор
 
