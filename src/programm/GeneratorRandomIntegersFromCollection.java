@@ -1,6 +1,5 @@
 package programm;
 
-import java.time.Duration;
 import java.time.Instant;
 import java.util.*;
 
@@ -46,7 +45,7 @@ public class GeneratorRandomIntegersFromCollection extends Manipulations {
         printDuration("HashSet", startTime, endTime);
 
         startTime = Instant.now();
-        LinkedHashSet<Long> longLinkedHashSet = createLinkedHashSet();
+        LinkedHashSet<Long> linkedHashSet = createLinkedHashSet();
         endTime = Instant.now();
         printDuration("LinkedHashSet", startTime, endTime);
 
@@ -56,7 +55,29 @@ public class GeneratorRandomIntegersFromCollection extends Manipulations {
         printDuration("TreeSet", startTime, endTime);
 
 
-        addElementOfRandom(arrayList);
+        printDelimiter();
+        //добавления элемента в определенное место
+        addElementRandomArrayList(arrayList);
+        addElementRandomLinkedList(linkedList);
+        addElementRandomVector(vector);
+        addElementOfArrayDeque(deque);
+        addElementPriorityQueue(priorityQueue);
+        addElementHashSet(hashSet);
+        addElementLinkedHashSet(linkedHashSet);
+        addElementTreeSet(treeSet);
+
+        printDelimiter();
+        //clear
+        clearElementArrayList(arrayList);
+        clearElementLinkedList(linkedList);
+        clearElementVector(vector);
+        clearElementArrayDeque(deque);
+        clearElementPriorityQueue(priorityQueue);
+        clearElementHashSet(hashSet);
+        clearElementHasLinkedHashSet(linkedHashSet);
+        clearElementTreeSet(treeSet);
+
+
 
 
     }
